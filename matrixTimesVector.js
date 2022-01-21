@@ -12,7 +12,7 @@ let matrix = [
     [2, 1],
     [1, 2]
 ]
-// a way to write "let matrix = [[1, 0], [0,1]]", an array of arrays, so it looks like a matrix
+// a way to write "let matrix = [[2, 1], [1,2]]", an array of arrays, so it looks like a matrix
 
 let matrixTimesVector = []
 // this array (vector) wil be the result of matrix * vector
