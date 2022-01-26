@@ -15,7 +15,7 @@ class Person {
 
 const person = new Person('James','Hager')
 const {firstName, lastName} = person
-console.log("name from deconstruction:", firstName, lastName)
+console.log("name from deconstruction:", firstName, lastName)  // James Hager
 
 //
 // if you are going to be using a person's full name a lot, you can make a computed property
@@ -54,21 +54,21 @@ const person1 = new Person1('James','Hager')
 // computed properties are generally used to provide information about the state of the object
 
 let person1Name = person1.name
-console.log("name from computed property:", person1.name)  // logged just to show output
+console.log("name from computed property:", person1.name)  // James Hager, logged just to show output
 
 // methods are generally used
 //   - to perform an action, or
 //   - when additional information is required to complete the action
 
 // for the method logName(), the action is doing the console.log
-person1.logName()
+person1.logName()  // James Hager
 
 // for the method setLovesToCode(lovesToCode), the action is changing the state of the object
 person1.setLovesToCode(true)
 
 // for the method nameFor(dayNight), the argument dayNight is required to control what is returned
 person1Name = person1.nameFor('day') 
-console.log("name from nameFor('day'):", person1Name)  // logged just to show output
+console.log("name from nameFor('day'):", person1Name)  // James Hager, logged just to show output
 
 person1Name = person1.nameFor('night') 
-console.log("name from nameFor('night'):", person1Name)  // logged just to show output
+console.log("name from nameFor('night'):", person1Name)  // Super Coder, logged just to show output
