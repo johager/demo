@@ -29,7 +29,7 @@ class Person1 extends Person {
 
     // computed property "name"
     get name() {
-        return this.firstName + " " + lastName
+        return this.firstName + " " + this.lastName
     }
 
     logName() {
